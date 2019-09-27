@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.stats import norm
-#Black Sholes Function
+#Black Scholes Function
 def BS(S, K, T, r, v, callPutFlag = 'c'):
     d1 = (np.log(S / K) + (r + 0.5 * v**2) * T) / (v * np.sqrt(T))
     d2 = d1 - v * np.sqrt(T)
